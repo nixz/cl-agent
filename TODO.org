@@ -1,0 +1,69 @@
+# -----------------------------------------------------------------------------
+# @file   TODO.org
+# @author Nix <nix@naunine.com>
+# @date   Fri Sep 25 09:58:26 2009
+#
+# @brief  
+#
+# -----------------------------------------------------------------------------
+
+#+SEQ_TODO: TODO TEST DONE
+
+* TODO Make agent autonomous
+** DONE Implement fork module
+** DONE Implement join module
+
+* TODO Create the environment based on FIFA
+** TODO Message Transport
+** TEST Agent Directory
+*** DONE Implement Socket program in common lisp
+    - sb-socket (sample program found)
+    - sb-sys has this implementation for doing handler function for
+      functions and x11. Use it for the agent.
+*** DONE Implement sha1 key generation in common lisp
+    - used cffi to link to the libssl
+    - this knowledge can be use for VRJuggler bindings.
+*** TEST Implement a hash table (a distributed hash table would be good)
+    - 
+** TODO Service Directory
+** TODO ACL (Agent Communication Language)
+
+
+notes:
+
+* An agent-environment frame work to build distributed applications.
+* Each agent has a unique identity in a given env.
+* The id of the agent is given by
+  - (root
+     abstract0-env      India
+     wan-env            com 
+     lan-env            lite3d
+     abstract0-env      Visualization-team
+     system-env         newton
+     proceess/port-env  3000
+     parent-agent       vrX-window-manager
+     child-agent        window0
+     grand-child-agent  viewport0(left-eye))
+* The environment is a system (engineering level) entity. [network-os-process etc] 
+* The agent is an abstract entity (scientific-mathematical level).
+* An agent can live free in the environment and not bother about the underlying implementation.
+  - Agent should be able to migrate to another environemnt if it feels so.
+  - Should not loose its communication and links with other agents in
+    the process.
+* The environment on the other hand has to adapt to the agent.
+  - Env has to make sure that the agent can do computation using all
+    the resources when availble
+* The agents identity is associated with its environment.
+  - Therefore when an agent migrates then its identity changes.
+  - A change in identity implies that the agent has to inform everyone
+    associated with the agent about this change.
+  - Alternatively the env can adjust its database automatically to
+    accomodate for the migration. (This seems like a better idea)
+  - In this scenario the agent just needs to know the name of the
+    other agent. However the environment has to maintain the location
+    of the other agent.
+
+* Agent has different contexts. 
+
+Notes:
+
