@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.acl
+(in-package #:std.acl
 
 (defclass  acl ()
   ((performative :initarg :performative

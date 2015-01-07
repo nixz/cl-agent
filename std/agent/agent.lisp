@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.agent)
+(in-package #:std.agent)
 
 (defclass  agent ()
   ((name :initarg :name

@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.env)
+(in-package #:std.env)
 
 ;;--------------------------------------------------------------------------fun
 (defun nslookup (hostname)

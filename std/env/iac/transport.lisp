@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.env.iac)
+(in-package #:std.env.iac)
 
 ;; abstract class (concrete class MUST inherit)
 (defclass  transport ()

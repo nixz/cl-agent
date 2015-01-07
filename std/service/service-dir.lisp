@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.service)
+(in-package #:std.service)
 
 ;;------------------------------------------------------------------------class
 (defclass  service-dir ()

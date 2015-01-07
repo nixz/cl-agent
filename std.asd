@@ -1,19 +1,20 @@
 ;;;;===========================================================================
- ;; @file   org.fipa.asd
+ ;; @file   org.fipa.std.asd
  ;; @author Nikhil Shetty <nikhil.j.shetty@gmail.com>
- ;; @date   Tue Feb 23 02:51:05 2010
+ ;; @date   Mon Mar 22 09:40:58 2010
  ;; 
  ;; @brief 
 ;;;;===========================================================================        
 
-(defpackage #:org.fipa-system (:use #:asdf #:cl))
-(in-package :org.fipa-system)
+(defpackage #:std-asd (:use #:asdf #:cl))
+(in-package :std-asd)
 
-(defsystem org.fipa
+(defsystem org.fipa.std
   :author      "Nikhil Shetty <nikhil.j.shetty@gmail.com>"
   :maintainer  "Nikhil Shetty <nikhil.j.shetty@gmail.com>"
   :version     "1.0"
   :licence     "GPL"
-  :description ""
-  :depends-on ("org.fipa.std")
+  :description " "
+  :depends-on ("std.env")
   :components ((:file "package")))
+

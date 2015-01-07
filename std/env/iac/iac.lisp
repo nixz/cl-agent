@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.env.iac)
+(in-package #:std.env.iac)
 
 (defclass  iac ()
   ((bindings :initarg :bindings

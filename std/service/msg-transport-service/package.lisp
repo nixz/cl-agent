@@ -1,5 +1,5 @@
 (in-package #:cl-user)
-(defpackage #:org.fipa.std.service.msg-transport-service
+(defpackage #:std.service.msg-transport-service
   (:nicknames #:mts)
   (:use #:cl)
   (:export  #:msg-transport-service

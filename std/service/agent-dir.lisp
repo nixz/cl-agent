@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.service)
+(in-package #:std.service)
 
 (defclass  agent-dir (service)
   ((dir :initform (make-hash-table)

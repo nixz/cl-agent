@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.service.msg-transport-service)
+(in-package #:std.service.msg-transport-service)
 
 ;; abstract class (concrete class MUST inherit)
 (defclass  transport ()

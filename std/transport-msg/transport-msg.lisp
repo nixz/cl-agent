@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.transport-msg)
+(in-package #:std.transport-msg)
 
 (defclass  transport-msg ()
   ((payload :initarg :payload

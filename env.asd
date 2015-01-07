@@ -1,22 +1,22 @@
 ;;;;===========================================================================
- ;; @file   org.fipa.std.env.asd
+ ;; @file   std.env.asd
  ;; @author Nikhil Shetty <nikhil.j.shetty@gmail.com>
  ;; @date   Fri Apr 16 07:29:42 2010
- ;; 
- ;; @brief 
-;;;;===========================================================================        
+ ;;
+ ;; @brief
+;;;;===========================================================================
 
-(defpackage #:org.fipa.std.env-asd (:use #:asdf #:cl))
-(in-package :org.fipa.std.env-asd)
+(defpackage #:std.env-asd (:use #:asdf #:cl))
+(in-package :std.env-asd)
 
-(defsystem org.fipa.std.env
+(defsystem std.env
   :author      "Nikhil Shetty <nikhil.j.shetty@gmail.com>"
   :maintainer  "Nikhil Shetty <nikhil.j.shetty@gmail.com>"
   :version     "1.0"
   :licence     "GPL"
   :description ""
 ;  :depends-on ("clx")
-  :components ((:file "package")          
+  :components ((:file "package")
  ;              (:file "gl-test" :depends-on ("package"))
                (:file "env-repl-server":depends-on ("package"))
                (:file "env-location-description":depends-on ("package"))

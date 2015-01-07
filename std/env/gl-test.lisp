@@ -6,7 +6,7 @@
 ;;;; @brief 
 ;;;; --------------------------------------------------------------------------
 
-(in-package #:org.fipa.std.env)
+(in-package #:std.env)
 
 ;;(defun test (function)
 (defun window (function &key (host "localhost") (display 1) (width 200) (height 200))

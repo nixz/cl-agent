@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.service.msg-transport-service)
+(in-package #:std.service.msg-transport-service)
 
 (defclass  agent-locator ()
   ((descriptions :initarg initial-argument

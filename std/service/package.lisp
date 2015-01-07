@@ -1,9 +1,9 @@
 (in-package #:cl-user)
 
-(defpackage #:org.fipa.std.service
+(defpackage #:std.service
   (:nicknames #:service)
   (:use #:cl
-        #:org.fipa.std.service.msg-transport-service)
+        #:std.service.msg-transport-service)
   (:export #:service
            #:service-name
            #:service-address

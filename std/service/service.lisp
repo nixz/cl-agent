@@ -1,4 +1,4 @@
-(in-package #:org.fipa.std.service)
+(in-package #:std.service)
 
 (defclass  service ()
   ((name :initarg :name
@@ -129,19 +129,19 @@
 ;; (service
 ;;  '((:name (guid "msg-transport")
 ;;     :type (:key pair :note "hey")
-;;     :locator '((:signature "org.fipa.std.service"
+;;     :locator '((:signature "std.service"
 ;;                 :signature-type '(foo object &key name)
 ;;                 :address "localhost"))))
 ;; (service
 ;;  '((:name (guid "agent-dir")
 ;;     :type (:key pair :another thing)
-;;     :locator '((:signatrue "org.fipa.std.service"
+;;     :locator '((:signatrue "std.service"
 ;;                 :signature-type '(foo object &key name)
 ;;                 :address "localhost")))))
 ;; (service
 ;;  '((:name (guid "service-dir")
 ;;     :type (:key pair :ok yup)
-;;     :locator '((:signatrue "org.fipa.std.service"
+;;     :locator '((:signatrue "std.service"
 ;;                 :signature-type '(foo object &key name)
 ;;                 :address "localhost")))))
 
@@ -202,7 +202,7 @@
 ;;      :CONNECTION (:HOST "EINSTEIN" :PORT 9999) :TEST "connected-to-EINSTEIN"
 ;;      :ATTRIBUTES '(" "))
 
-;; (defparameter *client* (apply 'org.fipa.std.service::make-connection '(:HOST "EINSTEIN" :PORT 9999)))
+;; (defparameter *client* (apply 'std.service::make-connection '(:HOST "EINSTEIN" :PORT 9999)))
 ;; (einstein (+ 1 2))
 ;; Every time we make/create an serviceiroment we essentially register an service-dir-entry with the service-dir.
 ;;
