@@ -16,16 +16,6 @@
 
 
 
-(defpackage #:org.fipa.std.msg
-  (:nicknames #:fipa-msg)
-  (:use #:cl)
-  (:export
-   ;; Data
-   #:msg
-   #:content
-   #:content-language
-   #:ontology))
-
 (defpackage #:org.fipa.std.transport-msg
   (:nicknames #:std-transport-msg)
   (:use #:cl)
