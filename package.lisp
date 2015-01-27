@@ -13,24 +13,6 @@
         #:org.fipa.std))
 
 
-(defpackage #:org.fipa.std.acl
-  (:nicknames #:std-acl)
-  (:use #:cl)
-  (:export
-   #:acl
-   #:performative
-   #:sender
-   #:receiver
-   #:reply-to
-   #:content
-   #:language
-   #:encoding
-   #:ontology
-   #:protocol
-   #:conversation-id
-   #:reply
-   #:in-reply-to
-   #:reply-by))
 
 (defpackage #:org.fipa.std.agent
   (:nicknames #:std-agent)
