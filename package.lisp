@@ -13,15 +13,6 @@
         #:org.fipa.std))
 
 
-
-(defpackage #:org.fipa.std.agent
-  (:nicknames #:std-agent)
-  (:use #:cl)
-  (:export
-   ;; Data
-   #:agent
-   #:agent-attrib))
-
 (defpackage #:org.fipa.std.env
   (:use #:cl 
         #:org.fipa.std.env.iac
