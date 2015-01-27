@@ -16,19 +16,6 @@
 
 
 
-;; from gamelib library
-(defpackage #:org.io.joystick
-  (:use :common-lisp)
-  (:export #:update-stick
-           #:make-stick
-           #:simple-transfer
-           #:square-transfer
-           #:set-transfer
-           #:axes
-           #:buttons
-           #+sb-thread #:continous-poll
-           #+sb-thread #:terminate-poll))
-
 (defpackage #:org.math.matrix
   (:use #:cl)
   (:export #:calculate-column-width
