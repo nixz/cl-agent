@@ -12,13 +12,6 @@
   (:use #:cl
         #:org.fipa.std))
 
-(defpackage #:org.fipa.std
-  (:use #:cl ;;#:org.fipa.std.env.iac
-        #:org.fipa.std.agent
-        #:org.fipa.std.env
-        #:org.fipa.std.acl)
-  (:export
-   #:agent-name))
 
 (defpackage #:org.fipa.std.acl
   (:nicknames #:std-acl)
