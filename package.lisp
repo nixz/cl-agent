@@ -14,17 +14,6 @@
 
 
 
-(defpackage #:org.fipa.std.env.iac
-  (:nicknames #:std-iac)
-  (:use #:cl)
-  (:export
-   #:iac-service
-   #:agent-locator
-   #:transport-description
-   #:transport
-   #:transport-type
-   #:transport-specific-address
-   #:transport-specific-property))
 
 
 (defpackage #:org.fipa.std.msg
