@@ -16,15 +16,6 @@
 
 
 
-(defpackage #:org.fipa.std.transport-msg
-  (:nicknames #:std-transport-msg)
-  (:use #:cl)
-  (:export
-   ;; Data
-   #:transport-msg
-   #:payload
-   #:envelope))
-
 ;; from gamelib library
 (defpackage #:org.io
   (:use #:common-lisp #:gl #:xlib)
