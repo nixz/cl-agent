@@ -17,13 +17,6 @@
 
 
 ;; from gamelib library
-(defpackage #:org.io
-  (:use #:common-lisp #:gl #:xlib)
-  (:shadow #:window)
-  (:export #:make-window
-           #:close))
-
-;; from gamelib library
 (defpackage #:org.io.joystick
   (:use :common-lisp)
   (:export #:update-stick
