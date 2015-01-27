@@ -13,32 +13,6 @@
         #:org.fipa.std))
 
 
-(defpackage #:org.fipa.std.env
-  (:use #:cl 
-        #:org.fipa.std.env.iac
-        #:sb-bsd-sockets)
-;        #:xlib)
-  (:export #:defenv
-           #:repl-server
-           #:env
-           #:env-name
-           #:env-address
-           #:env-type
-           #:env-locator
-           #:env-signature
-           #:env-attributes
-           #:env-root
-           #:env-dir
-           #:env-dir-entry
-           #:env-location-description
-           #:agent-dir
-           #:agent-dir-entry
-           #:register
-           #:deregister
-           #:modify
-           #:lookup))
-;;   #:window
-;;   #:anim))
 
 (defpackage #:org.fipa.std.env.iac
   (:nicknames #:std-iac)
