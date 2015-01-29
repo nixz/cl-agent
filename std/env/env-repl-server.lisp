@@ -63,7 +63,7 @@ connections and waits for various inputs."
                                  (setf count (+ count 1))
                                  (format t "~&Count = ~a ~%" count)))
                   (t           (error "Something went wrong while forking."))))))
-      (quit))))
+      (quit)))))
 
 ;; ;;--------------------------------------------------------------------------fun
 ;; (defun repl-server (&key (port 9999))
