@@ -33,9 +33,9 @@
 
 (in-package #:cl-user)
 
-(defpackage #:org.fipa.std.env
+(defpackage #:env
+  (:nicknames #:org.fipa.std.env #:std.env)
   (:use #:cl 
-        #:org.fipa.std.env.iac
         #:sb-bsd-sockets)
 ;        #:xlib)
   (:export #:defenv
