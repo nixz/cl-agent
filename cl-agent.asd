@@ -6,9 +6,6 @@
  ;; @brief This package is an implementation of FIPA abstract architecture.
 ;;;;===========================================================================
 
-(defpackage #:cl-agent-asd (:use #:asdf #:cl))
-(in-package :cl-agent-asd)
-
 (defsystem cl-agent
   :name        "cl-agent"
   :author      "Nikhil Shetty <nikhil.j.shetty@gmail.com>"
@@ -16,7 +13,8 @@
   :version     "1.0"
   :licence     "BSD"
   :description "This package is an implementatio of FIPA abstract architecture"
-  :depends-on ("cl-opengl" "clx")
+  :depends-on (#:sb-bsd-sockets
+               )
   :components
   ((:module "std"
             :components
